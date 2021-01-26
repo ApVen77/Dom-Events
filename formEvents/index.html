@@ -1,3 +1,28 @@
-<!-- The onload attribute fires when an object has been loaded. 
-use an onload event that verifies the age of the user before
-they enter the site-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p>Hello World</p>
+    <form name="myForm" id="myForm">
+      
+     Name <input type="text" size="30" 
+      onfocus ="focusField()" />
+      <br>
+      <br>
+     
+     City : <input name="city" onfocus="cityField()" />
+     <br>
+     <br>
+      
+      <input type="button" value="submit" />
+      
+      <input type="reset" value="clear all" />
+    </form>
+    <script src="app.js"></script> 
+</body>
+</html>

@@ -1,5 +1,9 @@
 // Use an addEventListener
 //  to attach a "mouseover" and "mouseout" event to a h3 element.
+//The h3 should change size when mouseovered
+
+
+
 
 
 
@@ -7,11 +11,6 @@
 // Use an addEventListener
 //  to attach a "mouseover" and "mouseout" element that asks 
 // and answers a trivia question
-function mOver(obj) {
-    obj.innerHTML = "Albany"
-}
 
-function mOut(obj) {
-    obj.innerHTML = "What is the capital of NY?"
-}
+
 

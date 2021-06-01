@@ -4,7 +4,7 @@
 
 var movePixels = 10;
 var delayMs = 50;
-var catTimer = null;
+var catTimer = null; //does not have a valuse, but it will 
 function catWalk() {
   var img = document.getElementsByTagName('img')[0];
   var currentLeft = parseInt(img.style.left);
@@ -16,3 +16,27 @@ function catWalk() {
 function startCatWalk() {
   catTimer = window.setInterval(catWalk, delayMs);
 }
+
+function onStartClick() {
+  startCatWalk(); 
+}
+
+var startButton= document.getElementById('start-button'); 
+startButton.addEventListener('click', onStartClick); 
+
+function onStopClick() {
+  window.clearInterval(catTimer); 
+}
+
+var stopButton= document.getElementById('stop-button')
+stopButton.addEventListener('click', onStopClick); 
+
+function onSpeedClick() {
+  movePixels += 2;
+  var speed= movePixels * (1000/20); 
+  document.getElementById('info').innerHTML= 'The Cat is Running:' + speed + 'px/second'
+}
+
+var speedButton= document.getElementById('speed-button');
+speedButton.addEventListener('click', onSpeedClick); 
+

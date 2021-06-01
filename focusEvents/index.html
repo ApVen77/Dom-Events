@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Crete a name and date input boxes 👇🏽👇🏽</h1>
-    
-    <!-- create input boxes here -->
-    
-<script src="app.js"></script>
+    <form id="myForm">
+        <input type="text" id="text" placeholder="name">
+        <input type="date" id="date">
+    </form>
+    <input name="name" type="text" onfocus="nameFocusFunction(this)" onblur="nameBlurFunction(this)"></input>
+
+    <label for="name" id="name">Name:
+        <input type="text" placeholder="Enter Name">
+    </label>
+    <label for="date">Date:
+        <input type="date" name="date">
+    </label>
+    <br> <br> <br>
+    <label for="name" id="name">Name:
+        <input type="text" placeholder="Enter Name">
+    </label>
+    <label for="date">Date:
+        <input type="date" name="date">
+    </label>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
